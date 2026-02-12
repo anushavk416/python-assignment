@@ -27,19 +27,19 @@ class Exam:
             return 0
 
     @classmethod
-    def update_pass_marks(cls, new_pass):
-        cls.pass_marks = new_pass
+    def update_pass_score(cls, new_pass):
+        cls.pass_score = new_pass
 
 e1 = Exam("anusha", "MATH", 100)
 e1.start_exam()
 e1.submit_exam(78)
 print("Score:", e1.calculate_score())
-print("Pass Marks:", Exam.pass_marks)
+print("Pass score:", Exam.pass_score)
 
-Exam.update_pass_marks(45)
-print("Updated Pass Marks:", Exam.pass_marks)
+Exam.update_pass_score(45)
+print("Updated Pass Score:", Exam.pass_score)
 
-e2 = Exam("savitri", "DSP", 100)
+e2 = Exam("savitri", "DSP", 120)
 e2.start_exam()
 e2.submit_exam(45)
 print("Score:", e2.calculate_score())
